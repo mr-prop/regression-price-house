@@ -133,7 +133,7 @@ streamlit run app/ml_app.py
 
 Run docker compose or fastapi and streamlit simultaneously. The following links can be used.
 
-API -> http://127.0.0.1:8000/
+API -> http://127.0.0.1:8000/docs
 
 Streamlit -> http://localhost:8501/
 
