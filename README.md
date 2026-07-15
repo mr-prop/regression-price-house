@@ -17,6 +17,10 @@ This project predicts house prices based on several features such as:
 
 The prediction model is served using FastAPI and the user interface is built with Streamlit.
 
+## Demo
+
+![Application Demo](assets/demo.gif)
+
 ## Features
 
 - Data preprocessing
