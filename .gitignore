@@ -1,0 +1,26 @@
+# Python Cache
+__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual Environment
+.venv/
+
+venv/
+
+# Environment Variables
+.env
+
+# Logs
+*.log
+
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
