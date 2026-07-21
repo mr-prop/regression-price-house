@@ -98,16 +98,16 @@ if button_prediction:
     }
 
     response_post = requests.post(
-    "http://api:8000/predict",
+    "http://api:8000/api/v1/predict/",
     json=x
 )
     response_get = requests.get(
-    "http://api:8000/data"
+    "http://api:8000/api/v1/predict/get/"
 )
     
 
-    if response_get.status_code == 201:
-        house = response_get.json()[0]
+    if response_get.status_code == 200:
+        house = response_get.json()["data"][0]
 
         col1 , col2 = st.columns(2)
         with col1:
@@ -127,7 +127,7 @@ if button_prediction:
     else:
         st.error("***Invalid input***")
 
-    if response_post.status_code == 201:
+    if response_post.status_code == 200:
         price_house = response_post.json()
         st.success(f"price prediction-> ${price_house['prediction']:,.2f}")
     else:
